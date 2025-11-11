@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>TakanashiRikkaiu's Home</title>
+  <meta name="description" content="TakanashiRikkaiu 的个人主页，展示项目、技能与联系方式。">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:700,400|Fira+Mono" rel="stylesheet">
+  <style>
+    :root {
+      --main-bg: #1E1E2F;
+      --accent: #51eaea;
+      --text: #fff;
+      --subtitle: #aaa;
+      --card-bg: #27293d;
+      --transition: all 0.3s cubic-bezier(.4,0,.2,1);
+    }
+
+    html,body {margin: 0; padding: 0; min-height: 100%;}
+    body {
+      background: var(--main-bg);
+      color: var(--text);
+      font-family: 'Montserrat', 'Fira Mono', monospace, sans-serif;
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 0 20px;
+    }
+    header {
+      text-align: center;
+      margin-top: 64px;
+      margin-bottom: 24px;
+    }
+    header img {
+      width: 104px;
+      height: 104px;
+      border-radius: 50%;
+      border: 3px solid var(--accent);
+      margin-bottom: 20px;
+      filter: drop-shadow(0 2px 16px #2ff5e88c)
+    }
+    h1 {
+      margin: 0 0 8px 0;
+      font-size: 2.6rem;
+      letter-spacing: 0.08em;
+    }
+    h2 {
+      margin: 12px 0 0 0;
+      font-size: 1.25rem;
+      color: var(--accent);
+      font-weight: 400;
+      letter-spacing: 2px;
+    }
+    .subtitle {
+      color: var(--subtitle);
+      font-size: 1.1rem;
+      margin-bottom: 16px;
+    }
+    .links {
+      margin: 24px 0;
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+    }
+    .links a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--card-bg);
+      border-radius: 60px;
+      color: var(--accent);
+      text-decoration: none;
+      font-size: 18px;
+      padding: 12px 20px;
+      transition: var(--transition);
+      box-shadow: 0 1px 4px #0004;
+      border: 1px solid transparent;
+    }
+    .links a:hover {
+      color: #fff;
+      background: var(--accent);
+      border-color: #fff2;
+      transform: translateY(-4px) scale(1.04);
+    }
+    section.cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 32px;
+      justify-content: center;
+      margin: 32px 0 48px 0;
+      max-width: 900px;
+      width: 100%;
+    }
+    .card {
+      background: var(--card-bg);
+      border-radius: 18px;
+      padding: 24px;
+      min-width: 210px;
+      max-width: 360px;
+      flex: 1 0 260px;
+      min-height: 158px;
+      box-shadow: 0 2px 16px #0002;
+      transition: var(--transition);
+      border: 1.5px solid transparent;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .card:hover {
+      border: 1.5px solid var(--accent);
+      box-shadow: 0 2px 32px #4ff7ea3b;
+      transform: scale(1.02);
+    }
+    .card h3 {
+      font-size: 1.25rem;
+      margin: 0 0 5px 0;
+      color: var(--accent);
+    }
+    .card code {
+      font-size: 0.98em;
+      color: #e9f0ff;
+      background: #16162688;
+      padding: 3px 6px;
+      border-radius: 4px;
+    }
+    @media (max-width: 750px) {
+      section.cards {
+        flex-direction: column;
+        align-items: center;
+      }
+      .card{
+        width: 100%;
+      }
+      header{
+        margin-top: 36px;
+      }
+    }
+    footer {
+      margin: 48px 0 24px 0;
+      color: #a7afd6;
+      font-size: 1rem;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://avatars.githubusercontent.com/u/0000000?v=4" alt="Avatar">
+    <h1>TakanashiRikkaiu</h1>
+    <div class="subtitle">探索 AI · 软件 · 科技的编程爱好者</div>
+    <h2>Full-stack Developer & Open Source Enthusiast</h2>
+  </header>
+  <div class="links">
+    <a href="https://github.com/TakanashiRikkaiu" target="_blank">🧑‍💻 GitHub</a>
+    <a href="mailto:example@email.com">📧 Email</a>
+    <a href="https://blog.example.com" target="_blank">📝 博客</a>
+    <a href="https://twitter.com/yourhandle" target="_blank">🐦 Twitter</a>
+  </div>
+
+  <section class="cards">
+    <div class="card">
+      <h3>🏆 个人项目</h3>
+      <p>AI Chatbot、长期维护的算法库、网站小工具等。</p>
+      <code>深度学习 / 前端 / 云端部署</code>
+    </div>
+    <div class="card">
+      <h3>🚀 技能栈</h3>
+      <ul>
+        <li>Python, JavaScript (ES6+), TypeScript</li>
+        <li>React, Vue, Svelte</li>
+        <li>Node.js, FastAPI, Flask</li>
+        <li>Docker, Linux, GitHub Actions</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>🌏 友情链接</h3>
+      <ul>
+        <li><a href="https://github.com/" target="_blank">GitHub主页</a></li>
+        <li><a href="https://pages.github.com/" target="_blank">GitHub Pages</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 TakanashiRikkaiu &middot; Power by <a href="https://pages.github.com/" style="color:var(--accent);" target="_blank">GitHub Pages</a>
+  </footer>
+</body>
+</html>
